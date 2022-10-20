@@ -1,3 +1,4 @@
+
 here::i_am(
   "code/01_make_output.R"
 )
@@ -25,3 +26,11 @@ saveRDS(
   random_numbers3,
   file = here::here("output", "random_numbers3.rds")
 )
+
+set.seed(4)
+random_numbers4 <- rbinom(100, 1, 0.25)
+saveRDS(
+  random_numbers4,
+  file = here::here("output", "random_numbers4.rds")
+)
+
